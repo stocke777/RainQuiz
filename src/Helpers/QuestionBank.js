@@ -5,7 +5,7 @@ const Questions = [
         b: "Orthodontist",
         c: "RainyDaze",
         d: "CloudChasers",
-        answer: "a"
+        answer: "Pluviophile"
     },
     {
         question: "Which of the following clouds is the most likely to produce rain?",
@@ -13,7 +13,7 @@ const Questions = [
         b: "Cirrostratus",
         c: "Altocumulus",
         d: "Cumulonimbus",
-        answer: "d"
+        answer: "Cumulonimbus"
     }
 ]
 
