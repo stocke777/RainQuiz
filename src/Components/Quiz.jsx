@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import Questions from '../Helpers/QuestionBank'
 import QuizContext from '../Helpers/Context'
+import { StyledContainer, StyledButton, ButtonGroup, StyledTitle, StyledNextButton } from './Styles'
 
 function Quiz() {
   const {gameState, setGameState, score, setScore} = useContext(QuizContext)
@@ -9,11 +10,11 @@ function Quiz() {
   
 
   const result = () => {
-
+    // if answer correct, increase score
     if(currentOption === Questions[currentQuestionIndex].answer){
       setScore(score + 10)
     }
-
+    // if on last question, go to results else go to next question
     if(currentQuestionIndex === Questions.length-1){
       setGameState("result")
     }else{
@@ -24,16 +25,22 @@ function Quiz() {
   return (
     <>
     <div>Quiz</div>
-    <h1>{Questions[currentQuestionIndex].question}</h1>
-    <button onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].a)}}>{Questions[currentQuestionIndex].a}</button>
-    <button onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].b)}}>{Questions[currentQuestionIndex].b}</button>
-    <button onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].c)}}>{Questions[currentQuestionIndex].c}</button>
-    <button onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].d)}}>{Questions[currentQuestionIndex].d}</button>
 
-    <div>
-      
-      <button onClick={()=>{result()}}>Next Question</button>
-    </div>
+    <StyledContainer>
+
+      <StyledTitle>{Questions[currentQuestionIndex].question}</StyledTitle>
+      <ButtonGroup>
+        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].a)}}>{Questions[currentQuestionIndex].a}</StyledButton>
+        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].b)}}>{Questions[currentQuestionIndex].b}</StyledButton>
+        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].c)}}>{Questions[currentQuestionIndex].c}</StyledButton>
+        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].d)}}>{Questions[currentQuestionIndex].d}</StyledButton>
+      </ButtonGroup>
+      <div>
+        <StyledNextButton  onClick={()=>{result()}}>NEXT QUESTION</StyledNextButton>
+      </div>
+    </StyledContainer>
+
+    
     </>
   )
 }
