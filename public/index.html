@@ -39,9 +39,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+    <div style="position: relative;">
+      <div id="root" style="position: absolute; z-index: 110;"></div>
     <section>
       <img id="background" alt="background" src="" />
     </section>
+    
     <script src="rainyday.js"></script>
     <script>
       function rain(){
@@ -49,6 +53,7 @@
         image.onload = function(){
           var rainyday = new RainyDay({
             image: this,
+            blur: 0,
           })
           RainyDay.rain([
             [5, 2, 2],
@@ -59,6 +64,8 @@
       }
       rain();
     </script>
-    <div id="root"></div>
+    
+    </div>
+    
   </body>
 </html>
