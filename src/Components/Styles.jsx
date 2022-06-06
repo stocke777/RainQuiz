@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const colors = {
     lightblue: "#896dff",
     purple: "purple",
-    pink: "#d888d4",
+    pink: "#431c42",
     primary: "#fff",
     theme: "#BE185D",
     light1: "#F3F4F6",
@@ -24,7 +24,7 @@ export const StyledContainer = styled.div`
     align-items: center;
     width: 60%;
     border-radius: 15px;
-    background-color: ${colors.lightblue};
+    background-color: rgba(7, 103, 154,.3);
 
 `;
 
@@ -45,7 +45,7 @@ export const StyledButton = styled.button`
     font-size: 24px;
     border: 3px solid ${colors.primary};
     border-radius: 15px;
-    color: ${colors.primary};
+    color: ${(props) => props.color? props.color: colors.primary};
     text-decoration: none;
     text-align: center;
     transition: ease-in-out 0.3s;

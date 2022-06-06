@@ -30,10 +30,34 @@ function Quiz() {
 
       <StyledTitle>{Questions[currentQuestionIndex].question}</StyledTitle>
       <ButtonGroup>
-        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].a)}}>{Questions[currentQuestionIndex].a}</StyledButton>
-        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].b)}}>{Questions[currentQuestionIndex].b}</StyledButton>
-        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].c)}}>{Questions[currentQuestionIndex].c}</StyledButton>
-        <StyledButton onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].d)}}>{Questions[currentQuestionIndex].d}</StyledButton>
+        <StyledButton 
+        background-color={currentOption===Questions[currentQuestionIndex].a? "pink": undefined} 
+        color={currentOption===Questions[currentQuestionIndex].a? "theme": undefined} 
+        onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].a)}}>
+          {Questions[currentQuestionIndex].a}
+        </StyledButton>
+
+        <StyledButton 
+        background-color={currentOption===Questions[currentQuestionIndex].b? "pink": undefined} 
+        color={currentOption===Questions[currentQuestionIndex].b? "theme": undefined} 
+        onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].b)}}>
+          {Questions[currentQuestionIndex].b}
+        </StyledButton>
+
+        <StyledButton 
+        background-color={currentOption===Questions[currentQuestionIndex].c? "pink": undefined} 
+        color={currentOption===Questions[currentQuestionIndex].c? "theme": undefined} 
+        onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].c)}}>
+          {Questions[currentQuestionIndex].c}
+        </StyledButton>
+
+        <StyledButton 
+        background-color={currentOption===Questions[currentQuestionIndex].d? "pink": undefined} 
+        color={currentOption===Questions[currentQuestionIndex].d? "theme": undefined} 
+        onClick={()=>{setCurrentOption(Questions[currentQuestionIndex].d)}}>
+          {Questions[currentQuestionIndex].d}
+        </StyledButton>
+        
       </ButtonGroup>
       <div>
         <StyledNextButton  onClick={()=>{result()}}>NEXT QUESTION</StyledNextButton>
