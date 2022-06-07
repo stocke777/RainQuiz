@@ -5,6 +5,7 @@ import Menu from './Components/Menu';
 import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import QuizContext from "./Helpers/Context";
+import RainButton from "./Components/Audio";
 
 function App() {
   const [gameState, setGameState] = useState("menu")
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
         <h1>QUIZ</h1>
-
+        <RainButton></RainButton>
         
         <QuizContext.Provider value = {{gameState, setGameState, score, setScore}}>
           {gameState === "menu" && <Menu/>}
