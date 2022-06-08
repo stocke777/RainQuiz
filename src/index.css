@@ -27,6 +27,7 @@ section img{
 .dropdown{
   width: 300px;
   margin: 100 auto;
+  position: relative;
 }
 
 .dropdown .dropdown-btn{
@@ -38,4 +39,27 @@ section img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.dropdown .dropdown-content{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  padding: 15px;
+  background: white;
+  box-shadow: 3 3 10 6 rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  color: #333;
+  width: 90%;
+}
+
+.dropdown .dropdown-content .dropdown-item{
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.dropdown .dropdown-content .dropdown-item:hover{
+  background: #f4f4f4;
 }
