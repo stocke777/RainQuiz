@@ -1,27 +1,32 @@
 import React, { useState } from "react";
 
 function Dropdown() {
+
+    const items = ["Item1", "Item2", "Item3", "Item4"]
     const [active, setActive] = useState(false)
 
+
     const handleDropdown = () => {
-        if(active){
+        if (active) {
             setActive(false)
-        }else{
+        } else {
             setActive(true)
         }
     }
 
     return (
         <div className="dropdown">
-            <div className="dropdown-btn" onClick={()=>{handleDropdown()}}>Choose</div>
+            <div className="dropdown-btn" onClick={() => { handleDropdown() }}>Choose</div>
             {active && (
                 <div className="dropdown-content">
-                    <div className="dropdown-item">
-                        Item 1
-                    </div>
-                    <div className="dropdown-item">
-                        Item 2
-                    </div>
+                    {items.map((item, index) => {
+                        return (
+                            <div className="dropdown-item">
+                                {item}
+                            </div>
+                        )
+                    })}
+
                 </div>
             )}
 
