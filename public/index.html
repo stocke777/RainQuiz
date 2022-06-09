@@ -42,12 +42,16 @@
     
     <div style="position: relative; margin: auto;">
       <div id="root" style="position: absolute; z-index: 110; top:50%; left:50%; transform: translate(-50%, -50%);"></div>
+      <button style="position: absolute; z-index: 110;" onclick="changeRain()">Change Background</button>
     <section>
       <img id="background" alt="background" src="" />
     </section>
     
     <script src="rainyday.js"></script>
-    <script>
+    <script src="rainscriptconfig.js"></script>
+
+    
+    <!-- <script>
       function rain(){
         const image = document.getElementById("background");
         image.onload = function(){
@@ -60,10 +64,10 @@
 
           ], 0)
         }
-        image.src = "bg5.jpg";
+        image.src = "bg2.jpg";
       }
       rain();
-    </script>
+    </script> -->
     
     </div>
     
