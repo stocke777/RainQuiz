@@ -5,18 +5,24 @@ import Menu from './Components/Menu';
 import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import QuizContext from "./Helpers/Context";
+import { RainSoundContext } from './Helpers/Context';
 import RainButton from "./Components/Audio";
-import Dropdown from './Components/Dropdown';
+import Dropdown from './Components/RainDropdown';
 
 function App() {
   const [gameState, setGameState] = useState("menu")
   const [score, setScore] = useState(0)
+  const [audio, setAudio] = useState(1)
 
   return (
     <div className="App">
         <h1>QUIZ</h1>
-        <RainButton></RainButton>
-        <Dropdown></Dropdown>
+
+        <RainSoundContext.Provider value = {{audio, setAudio}}>
+          <RainButton></RainButton>
+          <Dropdown></Dropdown>
+        </RainSoundContext.Provider>
+
         <QuizContext.Provider value = {{gameState, setGameState, score, setScore}}>
           {gameState === "menu" && <Menu/>}
           {gameState === "quiz" && <Quiz/>}

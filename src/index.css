@@ -16,7 +16,7 @@ code {
 section{
   position: relative;
   width: 80%;
-  height: 81vh;
+  height: 99.9vh;
   overflow: hidden;
 }
 
@@ -39,6 +39,7 @@ section img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .dropdown .dropdown-content{
