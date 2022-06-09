@@ -25,7 +25,7 @@ section img{
 }
 
 .dropdown{
-  width: 300px;
+  width: 200px;
   margin: 100 auto;
   position: relative;
 }
@@ -33,12 +33,12 @@ section img{
 .dropdown .dropdown-btn{
   padding: 15px;
   background: white;
-  box-shadow: 3 3 10 6 rgba(0, 0, 0, 0.06);
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: bold;
   color: #333;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -51,7 +51,7 @@ section img{
   box-shadow: 3 3 10 6 rgba(0, 0, 0, 0.06);
   font-weight: 500;
   color: #333;
-  width: 90%;
+  width: 85%;
 }
 
 .dropdown .dropdown-content .dropdown-item{
