@@ -18,7 +18,7 @@ function Dropdown() {
 
     return (
         <div className="dropdown">
-            <div className="dropdown-btn" onClick={() => { handleDropdown() }}>Rain Types</div>
+            <div className="bn632-hover bn20" onClick={() => { handleDropdown() }}>Rain Types</div>
             {active && (
                 <div className="dropdown-content">
                     {items.map((item, index) => {
