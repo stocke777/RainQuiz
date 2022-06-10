@@ -26,10 +26,10 @@ section img{
 
 .dropdown{
   width: 200px;
-  margin: 100 auto;
+  margin: auto;
   position: relative;
-  left: 580px;
-  top: -176px;
+  left: 0;
+  top: 0;
 }
 
 .dropdown .dropdown-btn{
@@ -56,6 +56,7 @@ section img{
   font-weight: 500;
   color: #333;
   width: 60%;
+  opacity: 0.8;
 }
 
 .dropdown .dropdown-content .dropdown-item{

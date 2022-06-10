@@ -5,7 +5,7 @@ function Dropdown() {
 
     const items = ["Window", "Thunder", "Splashing", "Bird", "Urban"]
     const [active, setActive] = useState(false)
-    const {audio, setAudio} = useContext(RainSoundContext)
+    const { audio, setAudio } = useContext(RainSoundContext)
 
 
     const handleDropdown = () => {
@@ -23,9 +23,9 @@ function Dropdown() {
                 <div className="dropdown-content">
                     {items.map((item, index) => {
                         return (
-                            <div className="dropdown-item" style={audio===index+1?{"background-color": "lightblue", "border-radius":"20px"}:undefined} key={item} onClick={()=>{
-                                setAudio(index+1)
-                                }}>
+                            <div className="dropdown-item" style={audio === index + 1 ? { "background-color": "lightblue", "border-radius": "20px" } : undefined} key={item} onClick={() => {
+                                setAudio(index + 1)
+                            }}>
                                 {item}
                             </div>
                         )

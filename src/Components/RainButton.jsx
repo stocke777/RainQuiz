@@ -9,6 +9,7 @@ import { RainSoundContext } from "../Helpers/Context";
 import { ButtonGroup, StyledButton, PlayButton } from "./Styles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons' 
+import Dropdown from "./RainDropdown";
 
 const RainButton = () => {
     const rainSounds = [rain1, rain2, rain3, rain4, rain5]
