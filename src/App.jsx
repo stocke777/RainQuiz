@@ -16,7 +16,6 @@ function App() {
 
   return (
     <div className="App">
-        <h1>RAIN QUIZ</h1>
 
         <RainSoundContext.Provider value = {{audio, setAudio}}>
           <RainButton></RainButton>

@@ -7,7 +7,7 @@ function Menu() {
     const {gameState, setGameState} = useContext(QuizContext)
   return (
     <div>
-        <div>Menu</div>
+        <h1>RAIN QUIZ</h1>
         <StartButton onClick={()=>{setGameState("quiz")}}>Start Quiz</StartButton>
     </div>
   )
