@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 export const colors = {
+    transparentblue: "#0fffcca8",
     lightblue: "#896dff",
     purple: "purple",
     pink: "#431c42",
@@ -31,7 +32,7 @@ export const StyledContainer = styled.div`
 export const StyledTitle = styled.h1`
     font-size: ${(props) => props.size}px;
     text-align: center;
-    color: ${(props) => props.color? props.color: colors.primary};
+    color: ${(props) => props.color ? props.color : colors.primary};
     padding: 5px;
     margin-bottom: 20px;
 `
@@ -41,11 +42,11 @@ export const StyledButton = styled.button`
     padding: 10px;
     width: 100%;
     margin: 15px 0;
-    background-color: ${(props) => props.color? props.color: colors.pink};
+    background-color: ${(props) => props.color ? props.color : colors.pink};
     font-size: 24px;
     border: 3px solid ${colors.primary};
     border-radius: 15px;
-    color: ${(props) => props.color? props.color: colors.primary};
+    color: ${(props) => props.color ? props.color : colors.primary};
     text-decoration: none;
     text-align: center;
     transition: ease-in-out 0.3s;
@@ -86,4 +87,46 @@ export const ButtonGroup = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin-top: 25px;
+`
+
+export const PlayButton = styled.button`
+    background-color: #0fffcca8;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+
+    &:hover{
+        background-color: ${colors.primary};
+        color: ${colors.dark1};
+        cursor: pointer;
+
+    }
+`
+
+export const StartButton = styled.button`
+    background-color: #0fffcca8;
+    border: none;
+    color: white;
+    padding: 60px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    border-radius: 50%;
+    border: 6px solid ${colors.primary};
+
+    &:hover{
+        background-color: ${colors.primary};
+        color: ${colors.dark1};
+        cursor: pointer;
+
+    }
 `

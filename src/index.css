@@ -34,12 +34,13 @@ section img{
   padding: 15px;
   background: white;
   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
-  font-weight: bold;
+  font-weight: bolder;
   color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .dropdown .dropdown-content{
@@ -48,7 +49,8 @@ section img{
   left: 0%;
   padding: 15px;
   background: white;
-  box-shadow: 3 3 10 6 rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
   color: #333;
   width: 85%;

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import QuizContext from "./../Helpers/Context"
+import {StartButton} from "./Styles"
 
 
 function Menu() {
@@ -7,7 +8,7 @@ function Menu() {
   return (
     <div>
         <div>Menu</div>
-        <button onClick={()=>{setGameState("quiz")}}>Click ME</button>
+        <StartButton onClick={()=>{setGameState("quiz")}}>Start Quiz</StartButton>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import QuizContext from "./Helpers/Context";
 import { RainSoundContext } from './Helpers/Context';
-import RainButton from "./Components/Audio";
+import RainButton from "./Components/RainButton";
 import Dropdown from './Components/RainDropdown';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-        <h1>QUIZ</h1>
+        <h1>RAIN QUIZ</h1>
 
         <RainSoundContext.Provider value = {{audio, setAudio}}>
           <RainButton></RainButton>

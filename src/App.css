@@ -38,3 +38,10 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  font-size: 50px;
+  color: whitesmoke;
+  text-shadow: 3px 3px #2a80e3;
+  font-family: cursive;
+}
