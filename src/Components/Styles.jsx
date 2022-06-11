@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const colors = {
     transparentblue: "#0fffcca8",
     lightblue: "#896dff",
-    purple: "purple",
+    purple: "#764ba2",
     pink: "#431c42",
     primary: "#fff",
     theme: "#BE185D",
@@ -40,8 +40,7 @@ export const StyledTitle = styled.h1`
 
 export const StyledButton = styled.button`
     padding: 10px;
-    width: 100%;
-    margin: 15px 0;
+    margin: 15px 0 15px 0;
     background-color: ${(props) => props.color ? props.color : colors.pink};
     font-size: 24px;
     border: 3px solid ${colors.primary};
@@ -61,13 +60,15 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledNextButton = styled.button`
-    padding: 10px;
-    width: 100%;
-    margin: 20px 0 40px 0;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    margin: 20px 10px 20px 10px;
     background-color: ${colors.purple};
     font-size: 24px;
     border: 3px solid ${colors.primary};
-    border-radius: 15px;
+    border-radius: 50%;
     color: ${colors.primary};
     text-decoration: none;
     text-align: center;
@@ -84,9 +85,10 @@ export const StyledNextButton = styled.button`
 
 export const ButtonGroup = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    width: 100%;
 `
 
 export const PlayButton = styled.button`

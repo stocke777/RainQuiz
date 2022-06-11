@@ -9,7 +9,6 @@ import { RainSoundContext } from "../Helpers/Context";
 import { ButtonGroup, StyledButton, PlayButton } from "./Styles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons' 
-import Dropdown from "./RainDropdown";
 
 const RainButton = () => {
     const rainSounds = [rain1, rain2, rain3, rain4, rain5]
@@ -21,7 +20,7 @@ const RainButton = () => {
     })
     return (
         <>
-            <ButtonGroup>
+            <ButtonGroup style={{"margin": "0px"}}>
                 <div style={{"display": "flex", "justify-content": "center"}}>
                 < PlayButton onClick={() => { sound.play() }}><FontAwesomeIcon icon={faPlay} /></PlayButton >
                 < PlayButton onClick={() => { sound.pause() }}><FontAwesomeIcon icon={faPause} /></PlayButton >

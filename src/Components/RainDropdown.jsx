@@ -30,10 +30,8 @@ function Dropdown() {
                             </div>
                         )
                     })}
-
                 </div>
             )}
-
         </div>
     )
 }
