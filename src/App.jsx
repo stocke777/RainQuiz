@@ -9,6 +9,7 @@ import { RainSoundContext } from './Helpers/Context';
 import RainButton from "./Components/RainButton";
 import Dropdown from './Components/RainDropdown';
 
+
 function App() {
   const [gameState, setGameState] = useState("menu")
   const [score, setScore] = useState(0)
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-
+        
         <RainSoundContext.Provider value = {{audio, setAudio}}>
           <RainButton></RainButton>
           <Dropdown></Dropdown>

@@ -132,3 +132,12 @@ export const StartButton = styled.button`
 
     }
 `
+
+export const MessageBox = styled.div`
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    opacity:0.8;
+    position:absolute;
+`

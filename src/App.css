@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   width: 100%;
   padding-top: 40px;
 }
@@ -36,12 +36,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-h1{
+h1 {
   font-size: 35px;
   color: whitesmoke;
   text-shadow: 3px 3px #2a80e3;
@@ -59,7 +60,7 @@ h1{
   padding: 10px 0 0 0;
   height: 35px;
   opacity: .9;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
@@ -82,12 +83,41 @@ h1{
 }
 
 .bn632-hover.bn20 {
-  background-image: linear-gradient(
-    to right,
-    #667eea,
-    #764ba2,
-    #6b8dd6,
-    #8e37d7
-  );
+  background-image: linear-gradient(to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7);
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+
+.share{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 20%;
+}
+
+.share-button {
+  padding: 10px;
+  margin: 15px 0 15px 0;
+  background-color: #0fffcca8;
+  font-size: 24px;
+  font-weight: bolder;
+  border: 3px solid white;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+  outline: 0;
+
+  
+}
+
+.share-button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
