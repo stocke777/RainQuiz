@@ -16,7 +16,8 @@ const RainButton = () => {
 
     const sound = new Howl({
         src: rainSounds[audio - 1],
-        html5: true
+        html5: true,
+        loop: true
     })
     return (
         <>

@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import { keyframes } from 'styled-components'
 
 export const colors = {
     transparentblue: "#0fffcca8",
@@ -138,6 +139,7 @@ export const MessageBox = styled.div`
     color: white;
     border-radius: 5px;
     padding: 10px;
-    opacity:0.8;
+    opacity:0.6;
     position:absolute;
 `
+
