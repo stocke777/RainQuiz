@@ -17,7 +17,7 @@ function Dropdown() {
     const items = ["Window", "Thunder", "Splashing", "Bird", "Urban"]
     const [active, setActive] = useState(false)
     const { audio, setAudio, sound, setSound } = useContext(RainSoundContext)
-
+    console.log(audio, sound._src)
 
     const handleDropdown = () => {
         if (active) {
@@ -27,15 +27,17 @@ function Dropdown() {
         }
     }
 
+
     const changeAudio = (index) => {
-        setAudio(index + 1, ()=>{})
-        console.log("inside dropdown", audio, sound)
-        setSound(new Howl({
-            src: rainSounds[audio - 1],
+
+        const obj = new Howl({
+            src: rainSounds[index],
             html5: true,
             loop: true
-          }))
-        console.log(sound)
+        })
+        setSound(obj)
+        setAudio(index + 1)
+
     }
 
     return (

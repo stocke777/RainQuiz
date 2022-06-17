@@ -1,12 +1,11 @@
 
 import './App.css';
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import Menu from './Components/Menu';
 import Quiz from './Components/Quiz';
 import Result from './Components/Result';
 import QuizContext from "./Helpers/Context";
 import { RainSoundContext } from './Helpers/Context';
-import RainButton from "./Components/RainButton";
 import Dropdown from './Components/RainDropdown';
 import RainSound from "./Components/RainSound"
 import { Howl } from "howler";
