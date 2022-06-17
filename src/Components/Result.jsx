@@ -15,7 +15,7 @@ function Result() {
 
   const [alert, setAlert] = useState(false);
   const handleShare = () => {
-    navigator.clipboard.writeText("http://localhost:3000/")
+    navigator.clipboard.writeText("https://62ac54ba13ddcc00073be17b--stunning-druid-280762.netlify.app/")
     setAlert(true)
     setTimeout(() => {
       setAlert(false);
